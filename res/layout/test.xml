@@ -2,12 +2,262 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-       <com.guesswho.app.view.UnderscoreEditText
-           android:layout_marginTop="100dp"
-           android:layout_width="match_parent"
-    android:layout_height="wrap_content" 
-        android:background="@null"
-           ></com.guesswho.app.view.UnderscoreEditText>
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/window_bg" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_mainview" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="12"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="54"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp" >
+
+        <LinearLayout
+            android:id="@+id/game_head_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/game_head_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/music" />
+
+            <TextView
+                android:id="@+id/game_head_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="科技"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/game_head_ll"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/game_head_ll"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这位企业家、慈善家、傻逼是谁?"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="他的企业是中国最大的搜索引擎，\n被称为东方的google."
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tip_button_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="10dp"
+            android:text="Tip\n1/3"
+            android:textColor="#FF8C00"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_head_ll"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Points:0"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/game_start0_ll" >
+
+                    <ImageView
+                        
+                        style="@style/game_start0"
+                       />
+                </LinearLayout>
+
+                <LinearLayout
+                  style="@style/game_start0_ll" >
+
+                 <ImageView
+                        style="@style/game_start0"
+                       />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/game_start0_ll"
+                   >
+
+                 <ImageView
+                        style="@style/game_start0"
+                       />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/game_start1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/game_end_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_bt_small"
+            android:text="End"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/game_skip_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/game_end_bt"
+            android:background="@drawable/selector_bt_small"
+            android:text="Skip"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
 
 </LinearLayout>

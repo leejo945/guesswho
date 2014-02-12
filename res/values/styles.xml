@@ -16,7 +16,7 @@
     </style>
 
     <style name="bt">
-    <item name="android:visibility">gone</item>
+        <item name="android:visibility">gone</item>
         <item name="android:layout_marginRight">15dp</item>
         <item name="android:onClick">onClick</item>
         <item name="android:textSize">@dimen/text_size_normal</item>
@@ -51,11 +51,58 @@
     </style>
 
     <style name="optisons_line">
+        <item name="android:visibility">gone</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.5dp</item>
         <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:background">#2D2D2D</item>
+    </style>
+
+    <style name="options_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="scores_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#3A3A3A</item>
+    </style>
+
+    <style name="scores_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 游戏界面 -->
+    <style name="game_start0_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#f0f0f0</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+ 
+    <style name="game_start0">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/star_bigger</item>
+    </style>
+
+    <style name="game_start1">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/small_star1</item>
     </style>
 
 </resources>

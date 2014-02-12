@@ -11,20 +11,52 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:background="@drawable/bg_bottom"
+         
         android:orientation="vertical"
-        android:padding="20dp" >
+         >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                 android:text="My Top"
+                 style="@style/scores_title"
+              />
+
+            <TextView
+                style="@style/scores_title"
+                android:text="Global Score Board"
+               />
+        </LinearLayout>
+
+        <View
+             android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3a3a3a" />
+
+        <ListView
+             android:visibility="gone"
+            android:id="@+id/play_top_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#3A3A3A"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" >
+        </ListView>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/language"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_normal" />
+                style="@style/options_text"
+                android:text="@string/language" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -56,33 +88,33 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
 
             <TextView
+                style="@style/options_text"
+                android:text="@string/game_music" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/game_music"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_normal" />
-            <RelativeLayout 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                
-                ></RelativeLayout>
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_off_on"
+                android:textOff="off"
+                android:textOn="on" />
         </RelativeLayout>
 
         <View style="@style/optisons_line" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/game_sounds"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_normal" />
+                style="@style/options_text"
+                android:text="@string/game_sounds" />
         </RelativeLayout>
 
         <include layout="@layout/play_layout_play_multiplay" />

@@ -1,6 +1,10 @@
 package com.guesswho.app.ui;
 
+import java.util.ArrayList;
+
 import com.guesswho.app.R;
+import com.guesswho.app.adapter.TopAdapter;
+import com.guesswho.app.entity.Top;
 import com.guesswho.app.util.ConstantManager;
 import com.guesswho.app.util.ToastManager;
 import com.guesswho.app.view.UnderscoreEditText;
@@ -8,6 +12,7 @@ import com.guesswho.app.view.UnderscoreEditText;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class PlayActivity extends BaseActivity {
@@ -56,7 +61,17 @@ public class PlayActivity extends BaseActivity {
 			break;
 		}
 		case ConstantManager.SCORES: {
-
+            ListView mLV = (ListView) findViewById(R.id.play_top_lv);
+            ArrayList<Top> myTop = new ArrayList<Top>();
+            ArrayList<Top> globalTop =  new ArrayList<Top>();
+            for(int i=0;i<11;i++){
+                 Top u = new Top();
+                 
+                 myTop.add(u);
+                 globalTop.add(u);
+            }
+            TopAdapter adapter = new TopAdapter(this, myTop,globalTop);
+            mLV.setAdapter(adapter);
 			break;
 		}
 		default:
@@ -72,6 +87,7 @@ public class PlayActivity extends BaseActivity {
 		}
 
 		case R.id.play_ok_bt: {
+			
 			break;
 		}
 
