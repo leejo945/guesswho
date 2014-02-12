@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@id/play_input_ll"
+    android:layout_below="@id/play_input_ll"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/play_menu_bt"
+        style="@style/bt"
+        android:text="@string/menu" />
+
+    <Button
+        android:id="@+id/play_ok_bt"
+        style="@style/bt"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/play_skip_bt"
+        style="@style/bt"
+        android:text="@string/skip_play" />
+
+</LinearLayout>

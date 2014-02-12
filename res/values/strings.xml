@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">guesswho</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 主菜单文本 -->
+    <string name="main_play">Play</string>
+    <string name="main_multiplay">Multiplay</string>
+    <string name="main_options">Options</string>
+    <string name="main_scores">Scores</string>
+    <string name="main_fanus">Fan us</string>
+    <string name="main_exit">Exit</string>
+    <string name="main_bestscore">Best score:</string>
+    <string name="main_points">points</string>
+    <!-- play部分 -->
+    <string name="fill_in_your_name">Fill in your name</string>
+    <string name="st1">1st.</string>
+    <string name="nd2">2nd.</string>
+    <string name="rd3">3rd.</string>
+    <string name="th4">4th.</string>
+    <string name="ok">OK</string>
+    <string name="skip_play">SkipPlay</string>
+    <string name="menu">Menu</string>
+    <!-- options -->
+    <string name="language">Language</string>
+     <string name="language_english">English</string>
+     <string name="language_chinese">Chinese</string>
+    <string name="game_music">Game music</string>
+    <string name="game_sounds">Game sounds</string>
+    <string name="off">off</string>
+    <string name="on">on</string>
+
+    <!-- 帮助部分 -->
+    <string name="help_version">©2010 BeiZ Ltd.</string>
+    <string name="contact_info">Any questions or feedback, please contact \n
+		support@beiz.com</string>
+    <string name="information">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Guess
+		who v1.0.2 \n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;Guess Who is an
+		entertaining, educational and fun quiz game. The game has over 1000
+		questions from 6 categories: Sports, Politics, Movies, Music, Business
+		and History. Guess
+		who is the first quiz game with Chinese and
+		international content and
+		with 3 language options (English,
+		traditional
+		and simplified
+		Chinese).\n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;In the
+		game player
+		has to guess who is the person in question as quickly
+		as
+		possible.
+		Player gets randomly questions from different categories
+		with
+		three
+		answering alternatives, from which he/she chooses the
+		correct one
+		by
+		sliding the arrow. The game is against time, so player
+		who answers
+		all
+		the questions correctly and fastest, gets the best
+		score.\n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;The game has 3 different levels.
+		In first level player has to answer 10
+		questions correctly in order to
+		get to the next level. In second level
+		player has to pass 8 questions
+		and in third level 5 questions. \n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;The player can take a tip 3
+		times within one game (max 2 tips per
+		question), skip the question once
+		and have one wrong answer within one
+		game. If the player chooses the
+		wrong answer second time the game
+		ends. Using tips, skip and wrong
+		answer will reduce player’s points
+		from max score. Tips and skips are
+		selected by clicking, the answer
+		alternative by sliding the arrow from
+		left to right.\n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;Multiplay
+		enables 2-4 different players to compete with one device. Just fill
+		in
+		the names of the players and hand the device to your friend after
+		answering your own question. There’s no timer in multiplay.\n
+		\n&#160;&#160;&#160;&#160;&#160;&#160;This game was created by BeiZ
+		Ltd. Please, visit our www-site for more
+		information about us.\n
+		(
+		http://www.beiz.com )</string>
+    <string name="toast_ui_error">参数异常</string>
+
+</resources>

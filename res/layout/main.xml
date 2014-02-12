@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/main_help_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:onClick="onClick"
+        android:src="@drawable/informationhelp" />
+
+    <LinearLayout
+        android:id="@+id/main_menu_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/main_help_iv"
+        android:orientation="vertical" >
+
+        <Button
+         
+            android:id="@+id/main_play"
+            style="@style/main_bt"
+            android:text="@string/main_play" />
+
+        <Button
+            android:id="@+id/main_multiplay"
+            style="@style/main_bt"
+            android:text="@string/main_multiplay" />
+
+        <Button
+            android:id="@+id/main_options"
+            style="@style/main_bt"
+            android:text="@string/main_options" />
+
+        <Button
+            android:id="@+id/main_scores"
+            style="@style/main_bt"
+            android:text="@string/main_scores" />
+
+        <Button
+            android:id="@+id/main_fanuse"
+            style="@style/main_bt"
+            android:text="@string/main_fanus" />
+
+        <Button
+            android:id="@+id/main_exit"
+            style="@style/main_bt"
+            android:text="@string/main_exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/main_menu_ll"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="@dimen/text_size_big"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_bestscore"
+            android:textColor="@android:color/white" />
+
+        <TextView
+             android:textSize="@dimen/text_size_big"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/main_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的名字非常非常非常非常长"
+            android:textColor="@android:color/white" />
+
+        <TextView
+             android:textSize="@dimen/text_size_big"
+            android:id="@+id/main_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="168"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+             android:textSize="@dimen/text_size_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_points"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/main_menu_ll" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/big_star" />
+    </RelativeLayout>
+
+</RelativeLayout>

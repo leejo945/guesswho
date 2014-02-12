@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/input_ll0"
+        style="@style/input_ll" >
+
+        <TextView
+            android:id="@+id/input_tv0"
+            style="@style/input_tv" />
+
+        <com.guesswho.app.view.UnderscoreEditText
+            android:id="@+id/input_et0"
+            style="@style/input_et" >
+        </com.guesswho.app.view.UnderscoreEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_ll1"
+        style="@style/input_ll" >
+
+        <TextView
+            android:id="@+id/input_tv1"
+            style="@style/input_tv" />
+
+        <com.guesswho.app.view.UnderscoreEditText
+            android:id="@+id/input_et1"
+            style="@style/input_et" >
+        </com.guesswho.app.view.UnderscoreEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_ll2"
+        style="@style/input_ll" >
+
+        <TextView
+            android:id="@+id/input_tv2"
+            style="@style/input_tv" />
+
+        <com.guesswho.app.view.UnderscoreEditText
+            android:id="@+id/input_et2"
+            style="@style/input_et" >
+        </com.guesswho.app.view.UnderscoreEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_ll3"
+        style="@style/input_ll" >
+ 
+        <TextView
+            android:id="@+id/input_tv3"
+            style="@style/input_tv" />
+
+        <com.guesswho.app.view.UnderscoreEditText
+            android:id="@+id/input_et3"
+            style="@style/input_et" >
+        </com.guesswho.app.view.UnderscoreEditText>
+    </LinearLayout>
+
+</LinearLayout>
